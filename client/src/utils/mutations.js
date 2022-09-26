@@ -1,4 +1,4 @@
-import qgl from "graphql-tag";
+import gql from "graphql-tag";
 
 export const LOGIN_USER = gql`
     mutation login($email: String!, $password: String!){
@@ -22,7 +22,7 @@ export const ADD_USER = gql`
         }
     }`;
 
-export const SAVE_BOOK = qgl`
+export const SAVE_BOOK = gql`
     mutation saveBook($book: SavedBookInput!){
         saveBook(book: $book){
             username
