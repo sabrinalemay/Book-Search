@@ -29,7 +29,7 @@ const typeDefs = gql `
         authors: [String]
         description: String
         bookId: String
-        image: string
+        image: String
         forSale: String
         link: String
         title: String
